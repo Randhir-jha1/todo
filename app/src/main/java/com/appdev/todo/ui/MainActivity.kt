@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity(), INoteRVAdapter {
 
     }
     override fun onCardClicked(note: Note) {
-      val openNoteIntent = Intent(this, OpenNote::class.java)
+      val openNoteIntent = Intent(this@MainActivity, OpenNote::class.java)
         openNoteIntent.putExtra("SelectedNote",note)
         startActivity(openNoteIntent)
     }

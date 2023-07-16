@@ -1,5 +1,6 @@
 package com.appdev.todo.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler().postDelayed({
-          val intent = Intent(this,MainActivity::class.java)
+          val intent = Intent(this@SplashActivity,MainActivity::class.java)
             startActivity(intent)
             finish()
         },SPLASH_DELAY)
