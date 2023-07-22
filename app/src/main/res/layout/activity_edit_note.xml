@@ -65,8 +65,8 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add"
-                android:id="@+id/btnAdd"
+                android:text="Update"
+                android:id="@+id/btnupdate"
                 android:paddingStart="50dp"
                 android:layout_margin="20dp"
                 android:paddingEnd="50dp"

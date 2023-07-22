@@ -1,5 +1,6 @@
 package com.appdev.todo.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.appdev.todo.R
@@ -21,7 +22,9 @@ class OpenNote : AppCompatActivity() {
             finish()
         }
         binding.ivEdit.setOnClickListener(){
-
+            val editNoteIntent = Intent(this@OpenNote, EditNote::class.java)
+            editNoteIntent.putExtra("SelectedNote",selectedNote)
+            startActivity(editNoteIntent)
         }
 
         binding.tvNotesTitle.text = selectedNote?.title
